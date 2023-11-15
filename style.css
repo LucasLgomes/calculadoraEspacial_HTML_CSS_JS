@@ -1,0 +1,138 @@
+body {
+    padding-top: 50px;
+    background-image: url(fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #ffffff;
+
+}
+
+.calculadora{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#velocidade {
+    width: 200px; /* Ajuste este valor para alterar a largura */
+    height: 30px; /* Ajuste este valor para alterar a altura */
+    padding: 10px;
+    border-radius: 20px; /* Ajuste este valor para alterar o arredondamento das bordas */
+    border: 2px solid #000080;
+    background-color: rgb(240, 240, 240); /* Ajuste este valor para alterar a cor de fundo */
+    font-size: 16px;
+    color: #000000; /* Ajuste este valor para alterar a cor do texto */
+}
+
+#velocidade:focus{
+    border: 2px solid #000080;
+    outline-style: none;
+}
+
+#velocidade::placeholder {
+    color: #aaa; /* Ajuste este valor para alterar a cor do texto do placeholder */
+}
+
+button {
+    background-color: #000080; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Duração da transição */
+    cursor: pointer;
+    border-radius: 12px; /* Arredondamento das bordas do botão */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 255, 0.9); /* Sombra do botão */
+}
+
+button:hover {
+    background-color: #0a0c0a; /* Cor de fundo do botão quando o mouse está sobre ele */
+    color: white;
+}
+
+h3{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.planetas {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.planeta {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    position: relative;
+}
+
+.planeta img {
+    width: 115px;
+    height: 115px;
+    transition: transform 0.3s ease;
+}
+
+.planeta img:hover {
+    transform: scale(1.1);
+}
+
+.foguete {
+    visibility: hidden;
+    position: absolute;
+    left: calc(35% - 15px); /* Ajuste este valor */
+    top: calc(59.5px - 35px); /* Ajuste este valor */
+    transition: all 5s linear;
+}
+
+.foguete img {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    left: -42.5px; /* Metade da largura da imagem do foguete */
+    top: -42.5px; /* Metade da altura da imagem do foguete */
+    transform-origin: 50% 50%; /* Ajuste estes valores */
+}
+
+.foguete.voar {
+    visibility: visible;
+    animation: foguete 10s linear infinite;
+}
+
+@keyframes foguete {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.terra {
+    position: relative;
+    top: 0px; /* Ajuste este valor conforme necessário */
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem Espacial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculadora de Viagem Espacial até o Sol</h1>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<div class="calculadora">
+    <label for="velocidade">Velocidade (em m/s):</label><br>
+    <input type="text" id="velocidade" name="velocidade" placeholder="Insira a velocidade da nave"><br>
+    <button onclick="calcular()">Calcular</button>
+
+    <h3 class="resultados">Resultados:</h3>
+    <p id="resultado"></p>
+
+    <h3>Escolha um planeta:</h3>
+<div class="planetas">
+    <div class="planeta" id="Mercurio">
+        <img src="mercurio.png" onclick="escolherPlaneta('Mercurio')">
+        <span>Mercurio</span>
+        <div class="foguete">
+            <img src="nave.png" id="foguete1">
+        </div>
+    </div>
+    <div class="planeta" id="Venus">
+        <img src="venus.png" onclick="escolherPlaneta('Venus')">
+        <span>Venus</span>
+        <div class="foguete">
+            <img src="nave.png" id="foguete2">
+        </div>
+    </div>
+    <div class="planeta" id="Terra">
+        <img src="terra.png" onclick="escolherPlaneta('Terra')">
+        <span class="terra">Terra</span>
+        <div class="foguete">
+            <img src="nave.png" id="foguete3">
+        </div>
+    </div>
+    <div class="planeta" id="Marte">
+        <img src="marte.png" onclick="escolherPlaneta('Marte')">
+        <span class="marte">Marte</span>
+        <div class="foguete">
+            <img src="nave.png" id="foguete4">
+        </div>
+    </div>
+    <div class="planeta" id="Jupiter">
+        <img src="jupiter.png" onclick="escolherPlaneta('Jupiter')">
+        <span>Jupiter</span>
+        <div class="foguete">
+            <img src="nave.png" id="foguete5">
+        </div>
+    </div>
+    <div class="planeta" id="Saturno">
+        <img src="saturno.png" onclick="escolherPlaneta('Saturno')">
+        <span>Saturno</span>
+        <div class="foguete">
+            <img src="nave.png" id="foguete6">
+        </div>
+    </div>
+    <div class="planeta" id="Urano">
+        <img src="urano.png" onclick="escolherPlaneta('Urano')">
+        <span>Urano</span>
+        <div class="foguete">
+            <img src="nave.png" id="foguete7">
+        </div>
+    </div>
+    <div class="planeta" id="Netuno">
+        <img src="neturno.png" onclick="escolherPlaneta('Netuno')">
+        <span>Netuno</span>
+        <div class="foguete">
+            <img src="nave.png" id="foguete8">
+        </div>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
